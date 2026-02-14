@@ -6,23 +6,35 @@
 </head>
 <body>
 
-    <div class="container">
-        <h1>POV:</h1>
-        <p id="typing"></p>
-        
-        <div class="screen">
-            <div class="code">
-                <div class="screen">
-    <div class="buttons">
-        <button onclick="openThis()">Open This</button>
-        <button onclick="forYou()">For You</button>
-    </div>
-</div>
-                </pre>
-            </div>
+<div class="container">
+    <h1>Happy valentine day my princess:</h1>
+    <p id="typing"></p>
+
+    <div class="screen">
+        <div class="buttons">
+            <button onclick="showImages()">Open This</button>
+            <button onclick="window.location.href='foryou.html'">For You</button>
+        </div>
+
+        <!-- Images Container -->
+        <div id="imageContainer" style="display:none; margin-top:20px;">
+            <img src="pic1.jpg" width="75">
+            <img src="pic2.jpg" width="75">
+            <img src="pic3.jpg" width="75">
+            <img src="pic4.jpg"> 
+            <img src="pic5.jpg">
+            <img src="pic6.jpg">
         </div>
     </div>
+</div>
+
+<script>
+function showImages() {
+    document.getElementById("imageContainer").style.display = "block";
+}
+</script>
 
 <script src="script.js"></script>
+
 </body>
 </html>

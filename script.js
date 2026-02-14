@@ -16,3 +16,8 @@ type();function openThis() {
 function forYou() {
     alert("This is specially for you 💙");
 }
+<script>
+function showImages() {
+    document.getElementById("imageContainer").style.display = "block";
+}
+</script>

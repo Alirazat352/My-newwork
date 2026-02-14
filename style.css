@@ -67,4 +67,45 @@ p {
 
 .buttons button:hover {
     transform: scale(1.08);
+}input, textarea {
+    width: 90%;
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+textarea {
+    height: 80px;
+}
+
+form button {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 12px;
+    background: linear-gradient(145deg, #ff4da6, #cc0066);
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+#imageContainer {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+#imageContainer img {
+    width: 120px;        /* Size control */
+    height: 120px;
+    object-fit: cover;   /* Crop properly */
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+    transition: 0.3s ease;
+}
+
+#imageContainer img:hover {
+    transform: scale(1.1);
 }
