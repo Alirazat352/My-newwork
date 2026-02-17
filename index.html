@@ -8,42 +8,22 @@
 <style>
 body{
     margin:0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #3a2c85, #2a1f63);
-    text-align:center;
-    color:white;
-}
-
-h1{
-    padding:30px 10px;
-}
-
-.gallery{
-    display:grid;
-    grid-template-columns: repeat(2, 160px);
-    gap:25px;
+    height:100vh;
+    display:flex;
     justify-content:center;
-    margin-bottom:30px;
-}
-
-.gallery img{
-    width:160px;
-    height:160px;
-    object-fit:cover;
-    border-radius:20px;
-    box-shadow:0 10px 25px rgba(0,0,0,0.5);
-    background:#2a1f63;
-}
-
-.buttons{
-    margin-bottom:50px;
+    align-items:center;
+    flex-direction:column;
+    font-family:Arial;
+    background:linear-gradient(to bottom, #3a2c85, #2a1f63);
+    color:white;
+    text-align:center;
 }
 
 button{
     background: linear-gradient(to right, #ff4da6, #ff1a8c);
     border:none;
     padding:12px 25px;
-    margin:10px;
+    margin:15px;
     border-radius:30px;
     color:white;
     font-size:16px;
@@ -61,16 +41,8 @@ button:hover{
 
 <h1>Happy Valentine Day My Princess 💖</h1>
 
-<div class="gallery">
-    <img src="pic2.jpg">
-    <img src="pic3.jpg">
-    <img src="pic5.jpg">
-</div>
-
-<div class="buttons">
-    <button onclick="window.location.href='open.html'">Open This</button>
-    <button onclick="window.location.href='foryou.html'">For You</button>
-</div>
+<button onclick="window.location.href='open.html'">Open This</button>
+<button onclick="window.location.href='foryou.html'">For You</button>
 
 </body>
 </html>

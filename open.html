@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Open This</title>
+
+<style>
+body{
+    margin:0;
+    font-family:Arial;
+    background:linear-gradient(to bottom, #3a2c85, #2a1f63);
+    text-align:center;
+    color:white;
+}
+
+h2{
+    margin-top:30px;
+}
+
+.container{
+    display:grid;
+    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    gap:20px;
+    padding:30px;
+}
+
+.box{
+    background:#34226d;
+    height:150px;
+    border-radius:20px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font-size:18px;
+    cursor:pointer;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    transition:0.3s;
+    overflow:hidden;
+}
+
+.box:hover{
+    transform:scale(1.05);
+}
+
+.box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+button{
+    margin:20px;
+    padding:10px 20px;
+    border:none;
+    border-radius:20px;
+    background:#ff4da6;
+    color:white;
+    cursor:pointer;
+}
+</style>
+</head>
+
+<body>
+
+<h2>Click The Box 💖</h2>
+
+<div class="container">
+
+    <div class="box" onclick="openImage(this, 'pic1.jpg')">Open Me</div>
+    <div class="box" onclick="openImage(this, 'pic2.jpg')">Open Me</div>
+    <div class="box" onclick="openImage(this, 'pic3.jpg')">Open Me</div>
+    <div class="box" onclick="openImage(this, 'pic4.jpg')">Open Me</div>
+
+</div>
+
+<button onclick="window.location.href='index.html'">Go Back</button>
+
+<script>
+function openImage(box, imageName){
+    box.innerHTML = "<img src='" + imageName + "'>";
+}
+</script>
+
+</body>
+</html>
