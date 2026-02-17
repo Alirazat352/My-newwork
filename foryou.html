@@ -1,53 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>For You Application</title>
-    <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Send Message</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #ff758c, #ff7eb3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.form-box {
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.form-box h2 {
+    margin-bottom: 20px;
+    color: #ff4da6;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    outline: none;
+}
+
+button {
+    background: #ff4da6;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background: #ff1a8c;
+}
+</style>
 </head>
+
 <body>
 
-<div class="container">
-    <h1>💖 Special Application 💖</h1>
+<div class="form-box">
+    <h2>💌 Send a Message</h2>
 
-    <div class="screen" style="padding:30px;">
-        <form id="myForm">
-            
-            <input type="text" id="name" placeholder="Enter Your Name" required><br><br>
-            
-            <input type="email" id="email" placeholder="Enter Your Email" required><br><br>
-            
-            <textarea id="message" placeholder="Write Something..." required></textarea><br><br>
-            
-            <button type="submit">Submit</button>
-
-        </form>
-
-        <p id="response" style="margin-top:15px;"></p>
-    </div>
-
-    <br>
-    <a href="index.html">
-        <button>Go Back</button>
-    </a>
+    <form action="https://formspree.io/f/xpqjdjgb" method="POST">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" rows="4" placeholder="Write your message..." required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
 </div>
-<script>
-window.onload = function() {
-
-    document.getElementById("myForm").addEventListener("submit", function(event) {
-
-        event.preventDefault();
-
-        var responseBox = document.getElementById("response");
-
-        responseBox.innerHTML = "✨ Thank you! Application submitted successfully!";
-        responseBox.style.color = "pink";
-        responseBox.style.fontWeight = "bold";
-
-        this.reset();
-    });
-
-};
-</script>
 
 </body>
 </html>
