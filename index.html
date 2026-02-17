@@ -3,50 +3,73 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>My Gallery</title>
+<title>Happy Valentine</title>
 
 <style>
-body {
-    margin: 0;
-    background: linear-gradient(to bottom, #2c2c7c, #1e1e5a);
-    text-align: center;
+body{
+    margin:0;
     font-family: Arial, sans-serif;
-    color: white;
+    background: linear-gradient(to bottom, #3a2c85, #2a1f63);
+    text-align:center;
+    color:white;
 }
 
-h2 {
-    margin-top: 40px;
+h1{
+    padding:30px 10px;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(2, 150px);
-    gap: 15px;
-    justify-content: center;
-    margin-top: 20px;
+.gallery{
+    display:grid;
+    grid-template-columns: repeat(2, 160px);
+    gap:25px;
+    justify-content:center;
+    margin-bottom:30px;
 }
 
-.gallery img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 15px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+.gallery img{
+    width:160px;
+    height:160px;
+    object-fit:cover;
+    border-radius:20px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.5);
+    background:#2a1f63;
+}
+
+.buttons{
+    margin-bottom:50px;
+}
+
+button{
+    background: linear-gradient(to right, #ff4da6, #ff1a8c);
+    border:none;
+    padding:12px 25px;
+    margin:10px;
+    border-radius:30px;
+    color:white;
+    font-size:16px;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.4);
+}
+
+button:hover{
+    transform:scale(1.05);
 }
 </style>
 </head>
 
 <body>
 
-<h2>Happy Valentine Day My Princess 💖</h2>
+<h1>Happy Valentine Day My Princess 💖</h1>
 
 <div class="gallery">
-    <img src="pic1.jpg">
     <img src="pic2.jpg">
     <img src="pic3.jpg">
-    <img src="pic4.jpg">
-     <img src="pic5.jpg">
-      <img src="pic6.jpg">
+    <img src="pic5.jpg">
+</div>
+
+<div class="buttons">
+    <button onclick="window.location.href='open.html'">Open This</button>
+    <button onclick="window.location.href='foryou.html'">For You</button>
 </div>
 
 </body>
